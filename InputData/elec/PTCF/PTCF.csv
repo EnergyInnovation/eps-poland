@@ -1,12 +1,14 @@
 ,Peak Time Capacity Factors
-coal,0.9005
-natural gas nonpeaker,0.7159
-nuclear,0.9500
-hydro,0.6686
-wind,0.0510
+hard coal,0.9241
+natural gas nonpeaker,0.8645
+nuclear,1.0000
+hydro,0.7667
+onshore wind,0.2514
 solar pv,0.0000
-solar thermal,0.8704
-biomass,0.8904
-geothermal ,0.8704
-petroleum,0.9100
-natural gas nonpeaker,0.9100
+solar thermal,0.7819
+biomass,0.7805
+geothermal ,0.7819
+petroleum,0.9998
+natural gas nonpeaker,0.9998
+lignite,0.9261
+offshore wind,0.4930
