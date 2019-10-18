@@ -20258,11 +20258,11 @@ Whether or not policies are ENABLED, changes in specific industries (from the va
 18:EPS WIP-B.vsc
 20:EPS WIP-B.lst
 15:0,0,0,0,0,0
-19:100,14
+19:110,15
 27:0,
 34:0,
 4:Time
-5:Output Total CO2e Emissions
+5:District Heating Pollutant Emissions[Pollutant]
 35:Date
 36:YYYY-MM-DD
 37:2000
