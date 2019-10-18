@@ -1,0 +1,12 @@
+,preexisting,preexisting nonretiring (not used in U.S. dataset),newly built
+coal,0.524,0,0.577
+natural gas nonpeaker,0.523,0,0.575
+nuclear,0.917,0,0.917
+hydro,0.132,0,0.145
+wind,0.228,0,0.251
+solar PV,0.108,0,0.118
+solar thermal,0.198,0,0.218
+biomass,0.850,0,0.935
+geothermal,0.740,0,0.814
+petroleum,0.201,0,0.221
+natural gas peaker,0.080,0,0.088
