@@ -3289,10 +3289,18 @@ Potential Reduction in End Year Proc Emis from Cement[Industry Category] :EXCEPT
 		]=
 	0 ~~|
 Potential Reduction in End Year Proc Emis from Cement[cement and other carbonates]=
-	GET DATA AT TIME( BPEiC BAU Process Emissions in CO2e[cement and other carbonates,CO2\
-		], FINAL TIME)
+	BPEiC End Year Cement
 	* PERAC Potential Perc Reduction in End Year Proc Emis from Cement
 	~	g CO2e
+	~		|
+
+BPEiC End Year Cement=
+	GET DIRECT CONSTANTS(
+	   'InputData/indst/BPEiC/EYBPEiC-cement.csv',
+	   ',',
+	   'B2'
+	)
+	~	MW
 	~		|
 
 Electricity Fuels Carbon Tax Amount per Unit Energy[Electricity Source]=
@@ -4948,10 +4956,10 @@ This Year Capacity Cost as Fraction of Start Year Capacity Cost[Electricity Sour
 	|
 
 Start Year Cost per Unit Capacity[Electricity Source]=
-	GET DATA AT TIME(
-	  CCaMC BAU Construction Cost per Unit Capacity[Electricity Source],
-	
-	  INITIAL TIME - 1
+	GET DIRECT CONSTANTS(
+	   'InputData/elec/CCaMC/SYCCaMC-BCCpUC.csv',
+	   ',',
+	   'B2'
 	)
 	~	$/MW
 	~		|
