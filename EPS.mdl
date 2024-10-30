@@ -6528,11 +6528,16 @@ Last Year BAU Distributed Electricity Source Capacity[Building Type,Electricity 
 		]= DELAY FIXED (
 	BDEQ BAU Distributed Electricity Source Capacity[Building Type,Electricity Source],
 	1,
-	GET DATA AT TIME(
-	  BDEQ BAU Distributed Electricity Source Capacity[Building Type,Electricity Source]\
-		,
-	  INITIAL TIME - 1
-	))
+	Start Year BDEQ BAU Distributed Electricity Source Capacity[Building Type,Electricity Source])
+	~	MW
+	~		|
+
+Start Year BDEQ BAU Distributed Electricity Source Capacity[Building Type,Electricity Source]=
+	GET DIRECT CONSTANTS(
+	   'InputData/bldgs/BDEQ/SYBDEQ-BDESC.csv',
+	   ',',
+	   'B2'
+	)
 	~	MW
 	~		|
 
