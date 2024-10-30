@@ -654,7 +654,7 @@ Flexibility Points from Peakers[Electricity Source]=
 
 Subsidy for Elec Production by Fuel This Year[Electricity Source]=
 	Subsidy for Elec Production by Fuel in Dollars[Electricity Source]
-	* FoPITY Fraction of Policy Implemented This Year[elec subsidy]
+	* Selected Policy Implementation Schedule[elec subsidy]
 	~	$/(MW*hour)
 	~		|
 
@@ -667,7 +667,7 @@ Difference in Cost Relative to Mean by Source[Electricity Source,Power Plant Qua
 
 Carbon Tax This Year[Sectors]=
 	Carbon Tax in Dollars[Sectors]
-	* FoPITY Fraction of Policy Implemented This Year[cross carbon tax]
+	* Selected Policy Implementation Schedule[cross carbon tax]
 	~	$/metric ton CO2e
 	~		|
 
@@ -1068,7 +1068,7 @@ Change in Fuel Use from Natural Gas Conversion[Industry Category,electricity if]
 
 Fraction of TDM Package Implemented This Year[Cargo Type]=
 	Fraction of TDM Package Implemented[Cargo Type]
-	* FoPITY Fraction of Policy Implemented This Year[trans TDM]
+	* Selected Policy Implementation Schedule[trans TDM]
 	~	Dmnl
 	~		|
 
@@ -1743,13 +1743,13 @@ Fraction of Land Use Policy Achieved This Year by Policy[land forest restoration
 
 Fraction of Peatland Restoration Achieved This Year=
 	Fraction of Peatland Restoration Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land peatland restoration]
+	* Selected Policy Implementation Schedule[land peatland restoration]
 	~	Dmnl
 	~		|
 
 Fraction of Forest Restoration Achieved This Year=
 	Fraction of Forest Restoration Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land forest restoration]
+	* Selected Policy Implementation Schedule[land forest restoration]
 	~	Dmnl
 	~		|
 
@@ -2553,7 +2553,7 @@ Max RPS Qualifying Electric Output Buildable[Electricity Source]=
 
 Boolean Use Non BAU RPS Qualifying Resource Definitions This Year=
 	Boolean Use Non BAU RPS Qualifying Resource Definitions
-	* FoPITY Fraction of Policy Implemented This Year[elec non BAU RPS qualifying resources\
+	* Selected Policy Implementation Schedule[elec non BAU RPS qualifying resources\
 		]
 	~	Dmnl
 	~		|
@@ -2675,7 +2675,7 @@ Fraction of District Heat Hard Coal Use Converted to Other Fuels=
 
 Fraction of District Heat Hard Coal Use Converted to Other Fuels This Year=
 	Fraction of District Heat Hard Coal Use Converted to Other Fuels
-	* FoPITY Fraction of Policy Implemented This Year[heat convert hard coal use]
+	* Selected Policy Implementation Schedule[heat convert hard coal use]
 	~	Dmnl
 	~		|
 
@@ -3368,7 +3368,7 @@ Max Capacity Buildable This Year Before Ban[Electricity Source]=
 
 Boolean Ban New Power Plants This Year[Electricity Source]=
 	Boolean Ban New Power Plants[Electricity Source]
-	* FoPITY Fraction of Policy Implemented This Year[elec ban new power plants]
+	* Selected Policy Implementation Schedule[elec ban new power plants]
 	~	Dmnl
 	~		|
 
@@ -3779,7 +3779,7 @@ PIFURfE Percentage Industry Fuel Use Reduction for Electricity=
 
 Fraction of Natural Gas Use Converted to Other Fuels This Year=
 	Fraction of Natural Gas Use Converted to Other Fuels
-	* FoPITY Fraction of Policy Implemented This Year[indst convert natural gas use]
+	* Selected Policy Implementation Schedule[indst convert natural gas use]
 	~	Dmnl
 	~		|
 
@@ -5793,7 +5793,7 @@ Min Allowed Distributed Solar Capacity=
 
 Min Fraction of Total Elec Demand to be Met by Distributed Solar PV This Year=
 	Min Fraction of Total Elec Demand to be Met by Distributed Solar PV
-	* FoPITY Fraction of Policy Implemented This Year[bldgs min fraction distributed solar\
+	* Selected Policy Implementation Schedule[bldgs min fraction distributed solar\
 		]
 	~	Dmnl
 	~		|
@@ -6049,14 +6049,14 @@ Change in Tax on Forest Equipment Expenses=
 
 Percent New Nonelec Component Sales Shifted to Elec This Year[Building Type]=
 	Percent New Nonelec Component Sales Shifted to Elec[Building Type]
-	* FoPITY Fraction of Policy Implemented This Year[bldgs component electrification]
+	* Selected Policy Implementation Schedule[bldgs component electrification]
 	~	Dmnl
 	~		|
 
 Reduction in E Use Allowed by Component Eff Std This Year[Building Component,Building Type\
 		]=
 	Reduction in E Use Allowed by Component Eff Std[Building Component,Building Type]
-	* FoPITY Fraction of Policy Implemented This Year[bldgs efficiency standards]
+	* Selected Policy Implementation Schedule[bldgs efficiency standards]
 	~	Dmnl
 	~		|
 
@@ -6282,7 +6282,7 @@ Percent Change in Electricity Exports=
 
 Percent Change in Electricity Exports This Year=
 	Percent Change in Electricity Exports
-	* FoPITY Fraction of Policy Implemented This Year[elec change exports]
+	* Selected Policy Implementation Schedule[elec change exports]
 	~	Dmnl
 	~		|
 
@@ -6297,7 +6297,7 @@ TCAMRB Transmission Capacity Across Modeled Region Border=
 
 Percent Change in Electricity Imports This Year=
 	Percent Change in Electricity Imports
-	* FoPITY Fraction of Policy Implemented This Year[elec change imports]
+	* Selected Policy Implementation Schedule[elec change imports]
 	~	Dmnl
 	~		|
 
@@ -6568,7 +6568,7 @@ DSCF Distributed Solar Capacity Factor=
 
 Perc Subsidy for Distributed Solar PV Capacity This Year=
 	Perc Subsidy for Distributed Solar PV Capacity
-	* FoPITY Fraction of Policy Implemented This Year[bldgs distributed solar subsidy]
+	* Selected Policy Implementation Schedule[bldgs distributed solar subsidy]
 	~	Dmnl
 	~		|
 
@@ -7113,8 +7113,8 @@ BAU Slope of Line Approaching Future RPS Percentages by Year[Future Year]=
 		future.
 	|
 
-BAU RPS Percentage by Year[FutureYear]=
-	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[FutureYear]
+BAU RPS Percentage by Year[Future Year]=
+	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[Future Year]
 	~	Dmnl
 	~		|
 
@@ -7171,7 +7171,7 @@ Percentage of RPS Qualifying Potential Output to Seek This Year=
 	~	Dmnl
 	~		|
 
-BRPSPTY BAU Renewable Portfolio Std Percentage This Year:=
+BRPSPTY BAU Renewable Portfolio Std Percentage This Year[Future Year]=
 	GET DIRECT CONSTANTS(
 	   'InputData/elec/BRPSPTY/BRPSPTY.csv',
 	   ',',
@@ -7222,8 +7222,8 @@ Numerical Future Year Definitions[Future Year]=
 		terms, so we can use subscript values in equations in Vensim.
 	|
 
-RPS Percentage by Year[FutureYear]=
-	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[FutureYear]
+RPS Percentage by Year[Future Year]=
+	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[Future Year]
 	+ Additional Renewable Portfolio Std Percentage
 	  * FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards](Numerical Future Year Definitions[Future Year])
 	~	Dmnl
@@ -7251,7 +7251,7 @@ Fraction of Avoided Deforestation Achieved=
 
 Fraction of Avoided Deforestation Achieved This Year=
 	Fraction of Avoided Deforestation Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land avoid deforestation]
+	* Selected Policy Implementation Schedule[land avoid deforestation]
 	~	Dmnl
 	~		|
 
@@ -7276,7 +7276,7 @@ BAU Max RPS Qualifying Electric Output Buildable[Electricity Source]=
 Percentage Reduction in Plant Downtime This Year[Electricity Source,Power Plant Quality\
 		]=
 	Percentage Reduction in Plant Downtime[Electricity Source,Power Plant Quality]
-	* FoPITY Fraction of Policy Implemented This Year[elec reduce plant downtime]
+	* Selected Policy Implementation Schedule[elec reduce plant downtime]
 	~	Dmnl
 	~		|
 
@@ -7334,7 +7334,7 @@ Percentage TnD Losses Avoided=
 
 Percentage TnD Losses Avoided This Year=
 	Percentage TnD Losses Avoided
-	* FoPITY Fraction of Policy Implemented This Year[elec avoid TND loss]
+	* Selected Policy Implementation Schedule[elec avoid TND loss]
 	~	Dmnl
 	~		|
 
@@ -8386,19 +8386,19 @@ Output LULUCF Anthropogenic CO2e Emissions=
 Boolean Rebate Program for Efficient Components This Year[Building Type,Building Component\
 		]=
 	Boolean Rebate Program for Efficient Components[Building Component]
-	* FoPITY Fraction of Policy Implemented This Year[bldgs rebate]
+	* Selected Policy Implementation Schedule[bldgs rebate]
 	~	Dmnl
 	~		|
 
 Additional Fuel Tax Rate by Fuel This Year[All Fuels,Sectors]=
 	Additional Fuel Tax Rate by Fuel[All Fuels]
-	* FoPITY Fraction of Policy Implemented This Year[cross fuel tax]
+	* Selected Policy Implementation Schedule[cross fuel tax]
 	~	Dmnl
 	~		|
 
 Percent Reduction in BAU Subsidies This Year[All Fuels]=
 	Percent Reduction in BAU Subsidies[All Fuels]
-	* FoPITY Fraction of Policy Implemented This Year[cross reduce BAU subsidies]
+	* Selected Policy Implementation Schedule[cross reduce BAU subsidies]
 	~	Dmnl
 	~		|
 
@@ -8471,7 +8471,7 @@ Fraction of Afforestation and Reforestation Achieved=
 
 Fraction of Afforestation and Reforestation Achieved This Year=
 	Fraction of Afforestation and Reforestation Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land afforestation and reforestation\
+	* Selected Policy Implementation Schedule[land afforestation and reforestation\
 		]
 	~	Dmnl
 	~		|
@@ -8483,7 +8483,7 @@ Fraction of Forest Set Asides Achieved=
 
 Fraction of Forest Set Asides Achieved This Year=
 	Fraction of Forest Set Asides Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land forest set asides]
+	* Selected Policy Implementation Schedule[land forest set asides]
 	~	Dmnl
 	~		|
 
@@ -8494,7 +8494,7 @@ Fraction of Improved Forest Management Achieved=
 
 Fraction of Improved Forest Management Achieved This Year=
 	Fraction of Improved Forest Management Achieved
-	* FoPITY Fraction of Policy Implemented This Year[land forest management]
+	* Selected Policy Implementation Schedule[land forest management]
 	~	Dmnl
 	~		|
 
@@ -8522,13 +8522,13 @@ PERAC Potential Perc Reduction in End Year Proc Emis from Cement=
 
 Fraction of Abatement from Cropland Management Achieved This Year=
 	Fraction of Abatement from Cropland Management Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst cropland management]
+	* Selected Policy Implementation Schedule[indst cropland management]
 	~	Dmnl
 	~		|
 
 Fraction of Abatement from Livestock Measures Achieved This Year=
 	Fraction of Abatement from Livestock Measures Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst livestock measures]
+	* Selected Policy Implementation Schedule[indst livestock measures]
 	~	Dmnl
 	~		|
 
@@ -8588,7 +8588,7 @@ Output Total BC Emissions=
 
 Fraction of Abatement from Rice Cultivation Measures Achieved This Year=
 	Fraction of Abatement from Rice Cultivation Measures Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst rice cultivation measures]
+	* Selected Policy Implementation Schedule[indst rice cultivation measures]
 	~	Dmnl
 	~		|
 
@@ -8609,7 +8609,7 @@ Percentage Increase in Transmission Capacity vs BAU=
 
 Percentage Increase in Transmission Capacity vs BAU This Year=
 	Percentage Increase in Transmission Capacity vs BAU
-	* FoPITY Fraction of Policy Implemented This Year[elec transmission growth]
+	* Selected Policy Implementation Schedule[elec transmission growth]
 	~	Dmnl
 	~		|
 
@@ -9055,13 +9055,13 @@ Cost to Industry from Process Emissions Policies[Industry Category,Industry Proc
 
 Boolean Use Non BAU Guaranteed Dispatch Settings This Year=
 	Boolean Use Non BAU Guaranteed Dispatch Settings
-	* FoPITY Fraction of Policy Implemented This Year[elec non BAU guaranteed dispatch]
+	* Selected Policy Implementation Schedule[elec non BAU guaranteed dispatch]
 	~	Dmnl
 	~		|
 
 Fraction of Energy Savings from Early Facility Retirement Achieved This Year=
 	Fraction of Energy Savings from Early Facility Retirement Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst early retirement]
+	* Selected Policy Implementation Schedule[indst early retirement]
 	~	Dmnl
 	~		|
 
@@ -9083,50 +9083,50 @@ Replaced Components Potential Energy Use[commercial,Building Fuel,Building Compo
 
 Fraction of Installation and System Integration Issues Remedied This Year=
 	Fraction of Installation and System Integration Issues Remedied
-	* FoPITY Fraction of Policy Implemented This Year[indst system integration]
+	* Selected Policy Implementation Schedule[indst system integration]
 	~	Dmnl
 	~		|
 
 Additional Battery Storage Annual Growth Percentage This Year=
 	Additional Battery Storage Annual Growth Percentage
-	* FoPITY Fraction of Policy Implemented This Year[elec storage growth]
+	* Selected Policy Implementation Schedule[elec storage growth]
 	~	Dmnl
 	~		|
 
 Fraction of Methane Capture Opportunities Achieved This Year=
 	Fraction of Methane Capture Opportunities Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst methane capture]
+	* Selected Policy Implementation Schedule[indst methane capture]
 	~	Dmnl
 	~		|
 
 Fraction of Methane Destruction Opportunities Achieved This Year=
 	Fraction of Methane Destruction Opportunities Achieved
-	* FoPITY Fraction of Policy Implemented This Year[indst methane destruction]
+	* Selected Policy Implementation Schedule[indst methane destruction]
 	~	Dmnl
 	~		|
 
 RnD Building Capital Cost Perc Reduction This Year[Building Component]=
 	RnD Building Capital Cost Perc Reduction[Building Component]
-	* FoPITY Fraction of Policy Implemented This Year[RnD building capital cost reduction\
+	* Selected Policy Implementation Schedule[RnD building capital cost reduction\
 		]
 	~	Dmnl
 	~		|
 
 Fraction of Non CHP Heat Production Converted to CHP This Year=
 	Fraction of Non CHP Heat Production Converted to CHP
-	* FoPITY Fraction of Policy Implemented This Year[heat convert heat to CHP]
+	* Selected Policy Implementation Schedule[heat convert heat to CHP]
 	~	Dmnl
 	~		|
 
 Fraction of Potential Additional CCS Achieved This Year=
 	Fraction of Potential Additional CCS Achieved
-	* FoPITY Fraction of Policy Implemented This Year[cross CCS]
+	* Selected Policy Implementation Schedule[cross CCS]
 	~	Dmnl
 	~		|
 
 Fraction of Potential Cogeneration and Waste Heat Recovery Adopted This Year=
 	Fraction of Potential Cogeneration and Waste Heat Recovery Adopted
-	* FoPITY Fraction of Policy Implemented This Year[indst CHP]
+	* Selected Policy Implementation Schedule[indst CHP]
 	~	Dmnl
 	~		|
 
@@ -9134,13 +9134,13 @@ Annual Additional Capacity Retired due to Early Retirement Policy This Year[Elec
 		]=
 	Annual Additional Capacity Retired due to Early Retirement Policy[Electricity Source\
 		]
-	* FoPITY Fraction of Policy Implemented This Year[elec early retirement]
+	* Selected Policy Implementation Schedule[elec early retirement]
 	~	MW
 	~		|
 
 RnD Electricity Fuel Use Perc Reduction This Year[Electricity Source]=
 	RnD Electricity Fuel Use Perc Reduction[Electricity Source]
-	* FoPITY Fraction of Policy Implemented This Year[RnD electricity fuel use reduction\
+	* Selected Policy Implementation Schedule[RnD electricity fuel use reduction\
 		]
 	~	Dmnl
 	~		|
@@ -9153,14 +9153,14 @@ Percentage Change in Lifetime[Electricity Source]=
 
 RnD Industry Capital Cost Perc Reduction This Year[Industry Category]=
 	RnD Industry Capital Cost Perc Reduction[Industry Category]
-	* FoPITY Fraction of Policy Implemented This Year[RnD industry capital cost reduction\
+	* Selected Policy Implementation Schedule[RnD industry capital cost reduction\
 		]
 	~	Dmnl
 	~		|
 
 Boolean Prevent Policies from Affecting Electricity Prices This Year=
 	Boolean Prevent Policies from Affecting Electricity Prices
-	* FoPITY Fraction of Policy Implemented This Year[cross prevent policies from affecting electricity prices\
+	* Selected Policy Implementation Schedule[cross prevent policies from affecting electricity prices\
 		]
 	~	Dmnl
 	~		|
@@ -9174,19 +9174,19 @@ Battery Storage Capacity=
 Percentage Improvement in Eqpt Efficiency Standards above BAU This Year[Industry Category\
 		]=
 	Percentage Improvement in Eqpt Efficiency Standards above BAU[Industry Category]
-	* FoPITY Fraction of Policy Implemented This Year[indst efficiency standards]
+	* Selected Policy Implementation Schedule[indst efficiency standards]
 	~	Dmnl
 	~		|
 
 LDVs Feebate Rate This Year=
 	LDVs Feebate Rate
-	* FoPITY Fraction of Policy Implemented This Year[trans LDVs feebate]
+	* Selected Policy Implementation Schedule[trans LDVs feebate]
 	~	Dmnl
 	~		|
 
 Generation Capacity Lifetime Extension This Year[Electricity Source]=
 	Generation Capacity Lifetime Extension[Electricity Source]
-	* FoPITY Fraction of Policy Implemented This Year[elec lifetime extension]
+	* Selected Policy Implementation Schedule[elec lifetime extension]
 	~	years
 	~		|
 
@@ -9216,39 +9216,39 @@ This Year Demand Response Capacity=
 
 RnD Transportation Capital Cost Perc Reduction This Year[Vehicle Type]=
 	RnD Transportation Capital Cost Perc Reduction[Vehicle Type]
-	* FoPITY Fraction of Policy Implemented This Year[RnD transportation capital cost reduction\
+	* Selected Policy Implementation Schedule[RnD transportation capital cost reduction\
 		]
 	~	Dmnl
 	~		|
 
 Fraction of Additional Demand Response Potential Achieved This Year=
 	Fraction of Additional Demand Response Potential Achieved
-	* FoPITY Fraction of Policy Implemented This Year[elec demand response]
+	* Selected Policy Implementation Schedule[elec demand response]
 	~	Dmnl
 	~		|
 
 Boolean Use Non BAU Mandated Capacity Construction Schedule This Year=
 	Boolean Use Non BAU Mandated Capacity Construction Schedule
-	* FoPITY Fraction of Policy Implemented This Year[elec non BAU mandated capacity construction\
+	* Selected Policy Implementation Schedule[elec non BAU mandated capacity construction\
 		]
 	~	Dmnl
 	~		|
 
 Boolean Improved Contractor Edu and Training This Year=
 	Boolean Improved Contractor Edu and Training
-	* FoPITY Fraction of Policy Implemented This Year[bldgs contractor training]
+	* Selected Policy Implementation Schedule[bldgs contractor training]
 	~	Dmnl
 	~		|
 
 Fraction of Addressable Process Emissions Avoided via Worker Training This Year=
 	Fraction of Addressable Process Emissions Avoided via Worker Training
-	* FoPITY Fraction of Policy Implemented This Year[indst worker training]
+	* Selected Policy Implementation Schedule[indst worker training]
 	~	Dmnl
 	~		|
 
 Boolean Improved Device Labeling This Year=
 	Boolean Improved Device Labeling
-	* FoPITY Fraction of Policy Implemented This Year[bldgs device labeling]
+	* Selected Policy Implementation Schedule[bldgs device labeling]
 	~	Dmnl
 	~		|
 
@@ -9256,31 +9256,31 @@ Fraction of Commercial Components Replaced Annually due to Retrofitting Policy T
 		[Building Component]=
 	Fraction of Commercial Components Replaced Annually due to Retrofitting Policy[Building Component\
 		]
-	* FoPITY Fraction of Policy Implemented This Year[bldgs retrofitting]
+	* Selected Policy Implementation Schedule[bldgs retrofitting]
 	~	Dmnl
 	~		|
 
 Fraction of CO2e from Vented Byproduct Gasses Avoided This Year=
 	Fraction of CO2e from Vented Byproduct Gasses Avoided
-	* FoPITY Fraction of Policy Implemented This Year[indst reduce venting]
+	* Selected Policy Implementation Schedule[indst reduce venting]
 	~	Dmnl
 	~		|
 
 Percentage Additional Improvement of Fuel Economy Std This Year[Vehicle Type]=
 	Percentage Additional Improvement of Fuel Economy Std[Vehicle Type]
-	* FoPITY Fraction of Policy Implemented This Year[trans fuel economy standards]
+	* Selected Policy Implementation Schedule[trans fuel economy standards]
 	~	Dmnl
 	~		|
 
 Fraction of Hard Coal Use Converted to Other Fuels This Year=
 	Fraction of Hard Coal Use Converted to Other Fuels
-	* FoPITY Fraction of Policy Implemented This Year[indst convert hard coal use]
+	* Selected Policy Implementation Schedule[indst convert hard coal use]
 	~	Dmnl
 	~		|
 
 RnD Building Fuel Use Perc Reduction This Year[Building Component]=
 	RnD Building Fuel Use Perc Reduction[Building Component]
-	* FoPITY Fraction of Policy Implemented This Year[RnD building fuel use reduction]
+	* Selected Policy Implementation Schedule[RnD building fuel use reduction]
 	~	Dmnl
 	~		|
 
@@ -9299,19 +9299,19 @@ Fraction of Heat from CHP[Industrial Fuel]=
 
 RnD CCS Capital Cost Perc Reduction This Year=
 	RnD CCS Capital Cost Perc Reduction
-	* FoPITY Fraction of Policy Implemented This Year[RnD CCS capital cost reduction]
+	* Selected Policy Implementation Schedule[RnD CCS capital cost reduction]
 	~	Dmnl
 	~		|
 
 RnD Industry Fuel Use Perc Reduction This Year[Industry Category]=
 	RnD Industry Fuel Use Perc Reduction[Industry Category]
-	* FoPITY Fraction of Policy Implemented This Year[RnD industry fuel use reduction]
+	* Selected Policy Implementation Schedule[RnD industry fuel use reduction]
 	~	Dmnl
 	~		|
 
 Percent Nonelec Vehicles Shifted to Elec This Year[Cargo Type,Vehicle Type]=
 	Percent Nonelec Vehicles Shifted to Elec[Cargo Type,Vehicle Type]
-	* FoPITY Fraction of Policy Implemented This Year[trans vehicle electrification]
+	* Selected Policy Implementation Schedule[trans vehicle electrification]
 	~	Dmnl
 	~		|
 
@@ -9362,26 +9362,26 @@ Cost per Unit New Elec Output[Electricity Source]=
 
 RnD CCS Fuel Use Perc Reduction This Year=
 	RnD CCS Fuel Use Perc Reduction
-	* FoPITY Fraction of Policy Implemented This Year[RnD CCS fuel use reduction]
+	* Selected Policy Implementation Schedule[RnD CCS fuel use reduction]
 	~	Dmnl
 	~		|
 
 Fraction of Cement Clinker Substitution Made This Year=
 	Fraction of Cement Clinker Substitution Made
-	* FoPITY Fraction of Policy Implemented This Year[indst cement clinker substitution]
+	* Selected Policy Implementation Schedule[indst cement clinker substitution]
 	~	Dmnl
 	~		|
 
 RnD Electricity Capital Cost Perc Reduction This Year[Electricity Source]=
 	RnD Electricity Capital Cost Perc Reduction[Electricity Source]
-	* FoPITY Fraction of Policy Implemented This Year[RnD electricity capital cost reduction\
+	* Selected Policy Implementation Schedule[RnD electricity capital cost reduction\
 		]
 	~	Dmnl
 	~		|
 
 RnD Transportation Fuel Use Perc Reduction This Year[Vehicle Type]=
 	RnD Transportation Fuel Use Perc Reduction[Vehicle Type]
-	* FoPITY Fraction of Policy Implemented This Year[RnD transportation fuel use reduction\
+	* Selected Policy Implementation Schedule[RnD transportation fuel use reduction\
 		]
 	~	Dmnl
 	~		|
@@ -9462,13 +9462,18 @@ RnD Building Capital Cost Perc Reduction[Building Component]=
 	~	Dmnl [0,0.4]
 	~		|
 
-FoPITY Fraction of Policy Implemented This Year[Policy]:INTERPOLATE::=
-	GET DIRECT DATA(
+FoPITY Fraction of Policy Implemented This Year[Policy]=
+	GET DIRECT LOOKUPS(
 	   'InputData/plcy-schd/FoPITY/FoPITY.csv',
 	   ',',
 	   '1',
 	   'B2'
 	)
+	~	Dmnl
+	~		|
+
+Selected Policy Implementation Schedule[Policy]=
+	FoPITY Fraction of Policy Implemented This Year[Policy](Time/One Year)
 	~	Dmnl
 	~		|
 
