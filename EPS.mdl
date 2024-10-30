@@ -6872,94 +6872,94 @@ BAU Max Additional Potential Capacity by Source[Electricity Source]=
 MCGLT Max Capacity Growth Lookup Table[hard coal es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '1',
 	   'C2'
 	) ~~|
-MCGLT Max Capacity Growth Lookup Table[natural gas nonpeaker es](
+MCGLT Max Capacity Growth Lookup Table[natural gas nonpeaker es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '3',
 	   'C4'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[nuclear es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[nuclear es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '5',
 	   'C6'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[hydro es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[hydro es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '7',
 	   'C8'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[onshore wind es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[onshore wind es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '9',
 	   'C10'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[solar PV es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[solar PV es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '11',
 	   'C12'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[solar thermal es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[solar thermal es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '13',
 	   'C14'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[biomass es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[biomass es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '15',
 	   'C16'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[geothermal es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[geothermal es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '17',
 	   'C18'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[petroleum es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[petroleum es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '19',
 	   'C20'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[natural gas peaker es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[natural gas peaker es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '21',
 	   'C22'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[lignite es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[lignite es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '23',
 	   'C24'
-	)) ~~|
-MCGLT Max Capacity Growth Lookup Table[offshore wind es](
+	) ~~|
+MCGLT Max Capacity Growth Lookup Table[offshore wind es]=
 	GET DIRECT LOOKUPS(
 	   'InputData/elec/MCGLT/MCGLT.csv',
-	   '',
+	   ',',
 	   '25',
 	   'C26'
-	))
+	)
 	~	MW
 	~		|
 
@@ -7105,78 +7105,8 @@ BAU Slope of Line Approaching Future RPS Percentages by Year[Future Year]=
 		future.
 	|
 
-BAU RPS Percentage by Year[Year2015]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2015) ~~|
-BAU RPS Percentage by Year[Year2016]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2016) ~~|
-BAU RPS Percentage by Year[Year2017]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2017) ~~|
-BAU RPS Percentage by Year[Year2018]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2018) ~~|
-BAU RPS Percentage by Year[Year2019]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2019) ~~|
-BAU RPS Percentage by Year[Year2020]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2020) ~~|
-BAU RPS Percentage by Year[Year2021]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2021) ~~|
-BAU RPS Percentage by Year[Year2022]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2022) ~~|
-BAU RPS Percentage by Year[Year2023]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2023) ~~|
-BAU RPS Percentage by Year[Year2024]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2024) ~~|
-BAU RPS Percentage by Year[Year2025]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2025) ~~|
-BAU RPS Percentage by Year[Year2026]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2026) ~~|
-BAU RPS Percentage by Year[Year2027]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2027) ~~|
-BAU RPS Percentage by Year[Year2028]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2028) ~~|
-BAU RPS Percentage by Year[Year2029]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2029) ~~|
-BAU RPS Percentage by Year[Year2030]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2030) ~~|
-BAU RPS Percentage by Year[Year2031]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2031) ~~|
-BAU RPS Percentage by Year[Year2032]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2032) ~~|
-BAU RPS Percentage by Year[Year2033]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2033) ~~|
-BAU RPS Percentage by Year[Year2034]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2034) ~~|
-BAU RPS Percentage by Year[Year2035]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2035) ~~|
-BAU RPS Percentage by Year[Year2036]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2036) ~~|
-BAU RPS Percentage by Year[Year2037]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2037) ~~|
-BAU RPS Percentage by Year[Year2038]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2038) ~~|
-BAU RPS Percentage by Year[Year2039]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2039) ~~|
-BAU RPS Percentage by Year[Year2040]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2040) ~~|
-BAU RPS Percentage by Year[Year2041]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2041) ~~|
-BAU RPS Percentage by Year[Year2042]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2042) ~~|
-BAU RPS Percentage by Year[Year2043]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2043) ~~|
-BAU RPS Percentage by Year[Year2044]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2044) ~~|
-BAU RPS Percentage by Year[Year2045]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2045) ~~|
-BAU RPS Percentage by Year[Year2046]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2046) ~~|
-BAU RPS Percentage by Year[Year2047]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2047) ~~|
-BAU RPS Percentage by Year[Year2048]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2048) ~~|
-BAU RPS Percentage by Year[Year2049]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2049) ~~|
-BAU RPS Percentage by Year[Year2050]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2050)
+BAU RPS Percentage by Year[FutureYear]=
+	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[FutureYear]
 	~	Dmnl
 	~		|
 
@@ -7234,10 +7164,9 @@ Percentage of RPS Qualifying Potential Output to Seek This Year=
 	~		|
 
 BRPSPTY BAU Renewable Portfolio Std Percentage This Year:=
-	GET DIRECT DATA(
+	GET DIRECT CONSTANTS(
 	   'InputData/elec/BRPSPTY/BRPSPTY.csv',
 	   ',',
-	   '1',
 	   'B2'
 	)
 	~	Dmnl
@@ -7285,186 +7214,10 @@ Numerical Future Year Definitions[Future Year]=
 		terms, so we can use subscript values in equations in Vensim.
 	|
 
-RPS Percentage by Year[Year2015]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2015)
+RPS Percentage by Year[FutureYear]=
+	BRPSPTY BAU Renewable Portfolio Std Percentage This Year[FutureYear]
 	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2015) ~~|
-RPS Percentage by Year[Year2016]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2016)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2016) ~~|
-RPS Percentage by Year[Year2017]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2017)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2017) ~~|
-RPS Percentage by Year[Year2018]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2018)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2018) ~~|
-RPS Percentage by Year[Year2019]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2019)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2019) ~~|
-RPS Percentage by Year[Year2020]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2020)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2020) ~~|
-RPS Percentage by Year[Year2021]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2021)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2021) ~~|
-RPS Percentage by Year[Year2022]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2022)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2022) ~~|
-RPS Percentage by Year[Year2023]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2023)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2023) ~~|
-RPS Percentage by Year[Year2024]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2024)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2024) ~~|
-RPS Percentage by Year[Year2025]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2025)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2025) ~~|
-RPS Percentage by Year[Year2026]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2026)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2026) ~~|
-RPS Percentage by Year[Year2027]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2027)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2027) ~~|
-RPS Percentage by Year[Year2028]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2028)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2028) ~~|
-RPS Percentage by Year[Year2029]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2029)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2029) ~~|
-RPS Percentage by Year[Year2030]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2030)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2030) ~~|
-RPS Percentage by Year[Year2031]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2031)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2031) ~~|
-RPS Percentage by Year[Year2032]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2032)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2032) ~~|
-RPS Percentage by Year[Year2033]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2033)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2033) ~~|
-RPS Percentage by Year[Year2034]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2034)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2034) ~~|
-RPS Percentage by Year[Year2035]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2035)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2035) ~~|
-RPS Percentage by Year[Year2036]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2036)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2036) ~~|
-RPS Percentage by Year[Year2037]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2037)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2037) ~~|
-RPS Percentage by Year[Year2038]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2038)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2038) ~~|
-RPS Percentage by Year[Year2039]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2039)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2039) ~~|
-RPS Percentage by Year[Year2040]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2040)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2040) ~~|
-RPS Percentage by Year[Year2041]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2041)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2041) ~~|
-RPS Percentage by Year[Year2042]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2042)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2042) ~~|
-RPS Percentage by Year[Year2043]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2043)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2043) ~~|
-RPS Percentage by Year[Year2044]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2044)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2044) ~~|
-RPS Percentage by Year[Year2045]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2045)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2045) ~~|
-RPS Percentage by Year[Year2046]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2046)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2046) ~~|
-RPS Percentage by Year[Year2047]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2047)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2047) ~~|
-RPS Percentage by Year[Year2048]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2048)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2048) ~~|
-RPS Percentage by Year[Year2049]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2049)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2049) ~~|
-RPS Percentage by Year[Year2050]=
-	GET DATA AT TIME(BRPSPTY BAU Renewable Portfolio Std Percentage This Year, 2050)
-	+ Additional Renewable Portfolio Std Percentage
-	  * GET DATA AT TIME(FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards\
-		], 2050)
+	  * FoPITY Fraction of Policy Implemented This Year[elec renewable portfolio standards](Numerical Future Year Definitions[Future Year])
 	~	Dmnl
 	~		|
 
