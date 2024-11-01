@@ -13505,8 +13505,34 @@ Last Year BAU Components Energy Use[Building Type,Building Fuel,Building Compone
 		DELAY FIXED (
 	BCEU BAU Components Energy Use[Building Type,Building Fuel,Building Component],
 	1,
-	GET DATA AT TIME(BCEU BAU Components Energy Use[Building Type,Building Fuel,Building Component\
-		], INITIAL TIME - 1))
+	Start Year BCEU BAU Components Energy Use[Building Type,Building Fuel,Building Component])
+	~	BTU
+	~		|
+
+Start Year BCEU BAU Components Energy Use[urban residential,Building Fuel,Building Component]=
+	GET DIRECT CONSTANTS(
+	   'InputData/bldgs/BCEU/SYBCEU-urban residential.csv',
+	   ',',
+	   'B2'
+	)
+	~	BTU
+	~		|
+
+Start Year BCEU BAU Components Energy Use[rural residential,Building Fuel,Building Component]=
+	GET DIRECT CONSTANTS(
+	   'InputData/bldgs/BCEU/SYBCEU-rural residential.csv',
+	   ',',
+	   'B2'
+	)
+	~	BTU
+	~		|
+
+Start Year BCEU BAU Components Energy Use[commercial,Building Fuel,Building Component]=
+	GET DIRECT CONSTANTS(
+	   'InputData/bldgs/BCEU/SYBCEU-commercial.csv',
+	   ',',
+	   'B2'
+	)
 	~	BTU
 	~		|
 
