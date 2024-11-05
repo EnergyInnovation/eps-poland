@@ -7908,13 +7908,22 @@ CPPCS Clean Power Plan Compliance Schedule:=
 Interim Period 2 Compliance=
 	IF THEN ELSE(
 	  Time = 2030 :AND: Electricity Sector Cumulative 2025 to 2027 Emissions[CO2]
-	  < GET DATA AT TIME(CPPCS Clean Power Plan Compliance Schedule, 2027),
+	  < CPPCS Clean Power Plan Compliance Schedule 2027,
 	
 	  1,
 	
 	  0
 	)
 	~	Dmnl
+	~		|
+
+CPPCS Clean Power Plan Compliance Schedule 2027=
+	GET DIRECT CONSTANTS(
+	   'InputData/add-outputs/CPPCS/CPPCS-2027.csv',
+	   ',',
+	   'B2'
+	)
+	~	g pollutant
 	~		|
 
 Electricity Sector Cumulative 2022 to 2024 Emissions[Pollutant]= INTEG (
@@ -7953,13 +7962,22 @@ Electricity Sector Cumulative 2028 to 2029 Emissions[Pollutant]= INTEG (
 Interim Period 3 Compliance=
 	IF THEN ELSE(
 	  Time = 2030 :AND: Electricity Sector Cumulative 2028 to 2029 Emissions[CO2]
-	  < GET DATA AT TIME(CPPCS Clean Power Plan Compliance Schedule, 2029),
+	  < CPPCS Clean Power Plan Compliance Schedule 2029,
 	
 	  1,
 	
 	  0
 	)
 	~	Dmnl
+	~		|
+
+CPPCS Clean Power Plan Compliance Schedule 2029=
+	GET DIRECT CONSTANTS(
+	   'InputData/add-outputs/CPPCS/CPPCS-2029.csv',
+	   ',',
+	   'B2'
+	)
+	~	g pollutant
 	~		|
 
 Electricity Sector 2030 Emissions[Pollutant]=
@@ -8001,13 +8019,22 @@ Clean Power Plan Compliance=
 Interim Period 1 Compliance=
 	IF THEN ELSE(
 	  Time = 2030 :AND: Electricity Sector Cumulative 2022 to 2024 Emissions[CO2]
-	  < GET DATA AT TIME(CPPCS Clean Power Plan Compliance Schedule, 2024),
+	  < CPPCS Clean Power Plan Compliance Schedule 2024,
 	
 	  1,
 	
 	  0
 	)
 	~	Dmnl
+	~		|
+
+CPPCS Clean Power Plan Compliance Schedule 2024=
+	GET DIRECT CONSTANTS(
+	   'InputData/add-outputs/CPPCS/CPPCS-2024.csv',
+	   ',',
+	   'B2'
+	)
+	~	g pollutant
 	~		|
 
 Net Potential Energy Use of New Components Caused by Retrofitting Policy[Building Type\
