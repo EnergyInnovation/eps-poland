@@ -10770,9 +10770,13 @@ Total CO2e Emissions per Unit GDP after GDP Adjustment=
 	|
 
 GDP=
-	BGRC BAU GDP
-	* PROD(1 + Percent Change in Industrial Fuel Cost per Unit Energy[Industrial Fuel!]
-	          * EoP Elasticity of GDP wrt Fuel Cost[Industrial Fuel!])
+	BGRC BAU GDP *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[electricity if] * EoP Elasticity of GDP wrt Fuel Cost[electricity if]) *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[hard coal if] * EoP Elasticity of GDP wrt Fuel Cost[hard coal if]) *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[natural gas if] * EoP Elasticity of GDP wrt Fuel Cost[natural gas if]) *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[biomass if] * EoP Elasticity of GDP wrt Fuel Cost[biomass if]) *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[petroleum diesel if] * EoP Elasticity of GDP wrt Fuel Cost[petroleum diesel if]) *
+  (1 + Percent Change in Industrial Fuel Cost per Unit Energy[heat if] * EoP Elasticity of GDP wrt Fuel Cost[heat if])
 	~	$
 	~		|
 
