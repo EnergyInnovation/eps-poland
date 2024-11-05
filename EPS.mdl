@@ -13538,7 +13538,7 @@ Last Year BAU Components Energy Use[Building Type,Building Fuel,Building Compone
 
 Start Year BCEU BAU Components Energy Use[urban residential,Building Fuel,Building Component]=
 	GET DIRECT CONSTANTS(
-	   'InputData/bldgs/BCEU/SYBCEU-urban residential.csv',
+	   'InputData/bldgs/BCEU/SYBCEU-urban-residential.csv',
 	   ',',
 	   'B2'
 	)
@@ -13547,7 +13547,7 @@ Start Year BCEU BAU Components Energy Use[urban residential,Building Fuel,Buildi
 
 Start Year BCEU BAU Components Energy Use[rural residential,Building Fuel,Building Component]=
 	GET DIRECT CONSTANTS(
-	   'InputData/bldgs/BCEU/SYBCEU-rural residential.csv',
+	   'InputData/bldgs/BCEU/SYBCEU-rural-residential.csv',
 	   ',',
 	   'B2'
 	)
