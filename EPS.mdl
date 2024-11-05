@@ -1,4 +1,9 @@
 {UTF-8}
+BAU Least Cost Dispatch Priority Profile Adjustment = 10000 ~~|
+BAU New Elec Output Priority Profile Adjustment = 10000 ~~|
+Least Cost Dispatch Priority Profile Adjustment = 10000 ~~|
+New Elec Output Priority Profile Adjustment = 10000 ~~|
+
 Total CO2e Emissions by Sector and Pollutant[Sectors,Pollutant]=
 	Total Pollutant Emissions by Sector[Sectors,Pollutant]*GWP by Pollutant[Pollutant]/10\
 		^12
@@ -6698,7 +6703,9 @@ BAU New Elec Output Priority Profile[Electricity Source, ptype]=
 	3 ~~|
 BAU New Elec Output Priority Profile[Electricity Source, ppriority]=
 	-BAU Cost per Unit New Elec Output[Electricity Source]
-	* Electricity Priority Profile Unit Correction Factor ~~|
+	* Electricity Priority Profile Unit Correction Factor
+  + BAU New Elec Output Priority Profile Adjustment ~~|
+
 BAU New Elec Output Priority Profile[Electricity Source, pwidth]=
 	MAX(
 	  Normalized Std Dev of New Output Costs[Electricity Source]
@@ -6755,7 +6762,8 @@ New Elec Output Priority Profile[Electricity Source, ptype]=
 New Elec Output Priority Profile[Electricity Source, ppriority]=
 	-Cost per Unit New Elec Output[Electricity Source]
 	* Electricity Priority Profile Unit Correction Factor
-	
+  + New Elec Output Priority Profile Adjustment
+
 	{ppriority: the center point of the normal distribution} ~~|
 New Elec Output Priority Profile[Electricity Source, pwidth]=
 	MAX(
@@ -10327,6 +10335,7 @@ Least Cost Dispatch Priority Profile[Power Plant Type by Quality,ppriority]=
 	-Dispatch Cost per Unit Output moved to Vector for Allocation[Power Plant Type by Quality\
 		]
 	* Electricity Priority Profile Unit Correction Factor
+  + Least Cost Dispatch Priority Profile Adjustment
 	
 	{ppriority: the center point of the normal distribution} ~~|
 Least Cost Dispatch Priority Profile[Power Plant Type by Quality,pwidth]=
@@ -10354,7 +10363,9 @@ BAU Least Cost Dispatch Priority Profile[Power Plant Type by Quality,ptype]=
 BAU Least Cost Dispatch Priority Profile[Power Plant Type by Quality,ppriority]=
 	-BAU Dispatch Cost per Unit Output moved to Vector for Allocation[Power Plant Type by Quality\
 		]
-	* Electricity Priority Profile Unit Correction Factor ~~|
+	* Electricity Priority Profile Unit Correction Factor
+  + BAU Least Cost Dispatch Priority Profile Adjustment ~~|
+
 BAU Least Cost Dispatch Priority Profile[Power Plant Type by Quality,pwidth]=
 	MAX(
 	  Normalized Std Dev of Dispatch Costs moved to Vector for Allocation[Power Plant Type by Quality\
